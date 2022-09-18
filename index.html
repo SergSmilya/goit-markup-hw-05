@@ -49,7 +49,7 @@
   <main class="main-page">
     <section class="hero-section">
       <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-      <button class="hero-btn" type="button">Замовити послугу</button>
+      <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
     </section>
     <!-- УВАГА ДО ДЕТАЛЕЙ section -->
     <section class="section">
@@ -353,9 +353,9 @@
   </footer>
 
   <!-- Modal -->
-  <div class="backdrop">
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button class="modal-btn" type="button">
+      <button class="modal-btn" type="button" data-modal-close>
         <svg class="icon-clos">
           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11">
           <path
@@ -364,6 +364,9 @@
       </button>
     </div>
   </div>
+
+  <!-- modal.js -->
+  <script src="./modal.js"></script>
 </body>
 
 </html>
