@@ -10,6 +10,9 @@
   --color-line-header: #ececec;
   --color-border-client: #AFB1B8;
   --background-acid: rgba(47, 48, 58, 0.8);
+  --background-portfolio-subtext: rgba(33, 150, 243, 0.9);
+  --background-modal: rgba(0, 0, 0, 0.2);
+  --border-modal: rgba(0, 0, 0, 0.1);
 }
 
 /* Body */
@@ -92,6 +95,22 @@ a {
   color: var(--accent-color);
 }
 
+.lex {
+  position: relative;
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+
+}
+
 .header-nav {
   display: flex;
   margin-left: 93px;
@@ -147,8 +166,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-    url(../images/decoration/bgd-hero.jpg);
+      rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -453,6 +471,30 @@ a {
   line-height: 1.9;
 }
 
+.wraper {
+  position: relative;
+}
+
+.portfolio-subtext {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--bgd-color);
+  background-color: var(--background-portfolio-subtext);
+  margin: 0;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  opacity: 0;
+}
+
+.portfolio-subtext:hover,
+.portfolio-subtext:focus {
+  opacity: 1;
+}
+
 .frame {
   border: 1px solid var(--color-border);
   border-top: transparent;
@@ -569,4 +611,47 @@ span.studio,
 
 .nav-item {
   margin-bottom: 9px;
+}
+
+/* Modal */
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--background-modal);
+  width: 100%;
+  height: 1024px;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background: var(--bgd-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 8px;
+  margin-right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--border-modal);
+  border-radius: 50%;
+  background: var(--bgd-color);
+  cursor: pointer;
+}
+
+.icon-clos {
+  width: 11px;
+  height: 11px;
 }
