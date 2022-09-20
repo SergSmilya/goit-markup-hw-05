@@ -13,7 +13,10 @@
   --background-portfolio-subtext: rgba(33, 150, 243, 0.9);
   --background-modal: rgba(0, 0, 0, 0.2);
   --border-modal: rgba(0, 0, 0, 0.1);
+  --timing-funcion: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* 250ms */
 
 /* Body */
 
@@ -78,12 +81,12 @@ a {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
   color: var(--color-link);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color 250ms var(--timing-funcion);
 }
 
 .header-link:hover,
@@ -108,7 +111,6 @@ a {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
-
 }
 
 .header-nav {
@@ -123,6 +125,7 @@ a {
 .icon-nav {
   fill: var(--primary-color-text);
   margin-right: 10px;
+  transition: fill 250ms var(--timing-funcion);
 }
 
 .auth-link {
@@ -130,6 +133,7 @@ a {
   align-items: center;
   color: var(--primary-color-text);
   font-weight: 500;
+  transition: color 250ms var(--timing-funcion);
 }
 
 .auth-link:hover,
@@ -360,10 +364,13 @@ a {
   height: 92px;
   border: 1px solid var(--color-border-client);
   border-radius: 4px;
+  transition: border 250ms var(--timing-funcion);
 }
 
+/* ??????????? */
 .client-icon {
-  fill: var(--color-border-client)
+  fill: var(--color-border-client);
+  /* transition: fill 2000ms var(--timing-funcion); */
 }
 
 .client-link:hover,
@@ -384,11 +391,13 @@ a {
 }
 
 .social-team {
+  outline: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
+  transition: background-color 250ms var(--timing-funcion);
 }
 
 .social-team:hover,
@@ -422,6 +431,7 @@ a {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
+  transition: 250ms var(--timing-funcion);
 }
 
 .btn-m+.btn-m {
@@ -439,6 +449,7 @@ a {
 
 .portfolio-items {
   display: block;
+  transition: box-shadow 250ms var(--timing-funcion);
 }
 
 .portfolio-items:hover,
@@ -491,6 +502,7 @@ a {
   font-size: 18px;
   line-height: 1.56;
   opacity: 0;
+  transition: opacity 250ms var(--timing-funcion);
 }
 
 .portfolio-subtext:hover,
@@ -560,6 +572,7 @@ span.studio,
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition: background-color 250ms var(--timing-funcion);
 }
 
 .social-link:hover,
@@ -624,6 +637,7 @@ span.studio,
   background-color: var(--background-modal);
   width: 100%;
   height: 100%;
+
 }
 
 .backdrop.is-hidden {
