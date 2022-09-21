@@ -368,7 +368,7 @@ a {
 /* ??????????? */
 .client-icon {
   fill: var(--color-border-client);
-  /* transition: fill 2000ms var(--timing-funcion); */
+  transition: all 2000ms var(--timing-funcion);
 }
 
 .client-link:hover,
@@ -394,13 +394,14 @@ a {
   align-items: center;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
   transition: background-color 250ms var(--timing-funcion);
 }
 
 .social-team:hover,
 .social-team:focus {
   background-color: var(--accent-color);
-  border-radius: 50%;
+
 }
 
 .social-team:hover .icon-social,
