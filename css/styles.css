@@ -368,7 +368,7 @@ a {
 /* ??????????? */
 .client-icon {
   fill: var(--color-border-client);
-  transition: all 2000ms var(--timing-funcion);
+  transition: fill 2000ms var(--timing-funcion);
 }
 
 .client-link:hover,
@@ -629,6 +629,32 @@ span.studio,
 .nav-item {
   margin-bottom: 9px;
 }
+
+/* Footer Form */
+/* .footer-form {
+  width: 570px;
+  height: 86px;
+  margin-left: 93px;
+}
+
+.form-title {
+  margin: 0;
+}
+
+.form-in {
+  width: 358px;
+  height: 50px;
+}
+
+.form-btn {
+  display: inline-flex;
+  width: 200px;
+  height: 50px;
+  background: var(--accent-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-left: 12px;
+} */
 
 /* Modal */
 .backdrop {
