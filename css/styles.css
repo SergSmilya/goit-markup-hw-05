@@ -429,7 +429,7 @@ a {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  transition: 250ms var(--timing-funcion);
+  transition: color 250ms var(--timing-funcion), background-color 250ms var(--timing-funcion), box-shadow 250ms var(--timing-funcion);
 }
 
 .btn-m+.btn-m {
