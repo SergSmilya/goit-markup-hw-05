@@ -288,10 +288,9 @@ a {
   width: 370px;
   height: 70px;
   background-color: var(--background-acid);
-  margin: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 0px;
   text-transform: uppercase;
@@ -365,10 +364,9 @@ a {
   transition: border-color 250ms var(--timing-funcion);
 }
 
-/* ??????????? */
 .client-icon {
   fill: var(--color-border-client);
-  transition: fill 2000ms var(--timing-funcion);
+  transition: fill 250ms var(--timing-funcion);
 }
 
 .client-link:hover,
@@ -632,7 +630,7 @@ span.studio,
 }
 
 /* Footer Form */
-.footer-form {
+/* .footer-form {
   min-width: 570px;
   margin-left: 93px;
 }
@@ -664,6 +662,7 @@ span.studio,
   line-height: 1.25;
   padding: 15px;
   margin-right: 12px;
+  color: var(--bgd-color);
 }
 
 .form-btn {
@@ -694,7 +693,7 @@ span.studio,
   width: 24px;
   height: 24px;
   margin-left: 10px;
-}
+} */
 
 /* Modal */
 .backdrop {
